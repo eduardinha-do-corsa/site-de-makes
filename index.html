@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Maqiagens de olho</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Maquiagem Geral</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lábios</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Corpo</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Rosto</a>
+        </li>
+      </ul>
+      <img src="img/logo2.png" alt="Logo da Alurabooks" class="container__imagem" height="60">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/heart.png" alt="Meus favoritos" class="container__imagem" height="70"></a>
+      <a href="#"><img src="img/compras2.jpeg" alt="Carrinhos de compras" class="container__imagem" height="60"></a>
+      <a href="#"><img src="img/icon user.png" alt="Meu perfil" class="container__imagem" height="60"></a>
+    </div>
+  </header>
+  
+  <section class="banner">
+    <img src="img/logo da loja.png" height="300">
+    <h2 class="banner__titulo">Seja bem-vindo a Lover Girl!</h2>
+    <p class="banner__texto">Encontre em nossa loja os melhores produtos para a sua pele!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima compra?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos...</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/produto1.png" 
+            alt="lapis para sobrancelha glossier" ></div>
+        <div class="swiper-slide"><img src="img/produto2.png" 
+            alt="lip balm glossier"></div>
+        <div class="swiper-slide"><img src="img/produto3.png" alt="lapis de labios rosa glossier">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/produto4.png" alt="base glossier" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/produto5.png" alt="mascara de cilios glossier" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/produto6.png" alt="balm de morango glossier" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Glosses Tower28</h2>
+          </p>
+        </div>
+        <img src="" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/heart.png" alt="Favoritar livro"  height="60"/>
+          </li>
+          <li class="botões__item">
+            <img src="img/compras2.jpeg"  alt="Adicionar no carrinho de compras"  height="60"/> 
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/produto7.png"
+            alt="Blush dior rosa"></div>
+        <div class="swiper-slide"><img src="img/produto8.png" alt="Iluminador dior">
+        </div>
+        <div class="swiper-slide"><img src="img/produto9.png" alt="Lip glow oil dior">
+        </div>
+        <div class="swiper-slide"><img src="img/produto10.png" alt="mascara de cilios dior"></div>
+        <div class="swiper-slide"><img src="img/produto11.png" alt="batom em bala vermelho dior"></div>
+        <div class="swiper-slide"><img src="img/produto12.png" alt="corretivo forever glow dior"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Marca do mes!!!</h3>
+          <h2 class="descrição__titulo-livro">Bruna Tavares</h2>
+          <p class="descrição__texto">Marca brasileira de produtos.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/heart.png" alt="Favoritar produto" height="60"></li>
+          <li class="botões__item"><img src="img/compras2.jpeg" alt="Adicionar no carrinho de compras" height="60"></li>
+        </ul>
+        <!-- 2º coluna -->
+       
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">FRAN BY FRANCINY</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">MARI MARIA</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">DIOR</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">MILK MAKEUP</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">DRUNK ELEPHANT</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">GLOSSIER</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">TOWER28</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">CHANEL</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro de todos os cupons e promoções!</h2>
+    <p class="contato__texto">
+      Atualizações de marcas, produtos novos, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Lover Girl.</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
